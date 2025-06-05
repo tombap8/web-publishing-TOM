@@ -40,6 +40,18 @@
         */
         /* 패딩 */
         padding: 20px;
+        /* 박스의 크기가 1280px인데 여기게 패딩을
+        주면 패딩만큼 박스가 커진다. 따라서
+        1280px에 맞추려면 패딩만큼 빼야한다.
+        그런데 패딩을 안쪽으로 생기게하는 속성이 있는데
+        바로 box-sizing속성이다! */
+        box-sizing: border-box;
+
+        /* 값으로 border-box라고 주면 패딩과 보더가
+        모두 포함된 박스로 설정된다! */
+
+        /* 보더(경계선) - border: 두께 종류 색상 */
+        border: 10px dotted hotpink;
       }
 
       /* 타이틀 */
@@ -88,6 +100,15 @@
         /* 박스에 이미지 크기 맞춤 */
         width: 100%;
       }
+
+      /* 3.하단영역 */
+      .footer{
+        width: 1280px;
+        margin: 0 auto;
+        background-color: #ccc;
+        padding: 40px;
+        text-align: center;
+      }
     </style>
   </head>
   <body>
@@ -108,9 +129,12 @@
     </div>
     <!-- 3.하단영역 -->
     <div class="footer">
+      <!-- address요소 : 주소 등 정보 -->
       <address>
-        서울시 강남구 역삼동 119 대호B 8F 대표: Tom Brace Parker 전화:
-        010-2222-3333
+        서울시 강남구 역삼동 119 대호B 8F <br>
+        <!-- br요소 : 줄바꿈 -->
+        대표: Tom Brace Parker <br>
+        전화: 010-2222-3333
       </address>
     </div>
   </body>
