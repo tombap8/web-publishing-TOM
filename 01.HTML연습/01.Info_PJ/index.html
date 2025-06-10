@@ -13,7 +13,10 @@
 
     <title>네이버요약뉴스 메인</title>
     <!-- 외부CSS 불러오기 : 익스터널방식 -->
+     <!-- 공통CSS -->
      <link rel="stylesheet" href="./css/common.css">
+     <!-- 메인CSS -->
+      <link rel="stylesheet" href="./css/main.css">
     <style>
       /* 스타일시트 영역에 CSS를 쓰는 방법 : 인터널방식 */
       /* 
@@ -29,7 +32,7 @@
   </head>
   <body>
     <!-- 1.상단영역 -->
-    <header class="header" style="text-align: center"> 
+    <header class="header border-style1 layout-common" style="text-align: center"> 
       <!-- 태그안에 style속성으로 지정하는 방법은 인라인방식임 -->
       <h1 id="main-title">네이버요약뉴스</h1>
       <ul>
@@ -43,11 +46,11 @@
       </ul>
     </header>
     <!-- 2.메인영역 -->
-    <main class="main">
+    <main class="main layout-common">
       <img src="./images/main_img.jpg" alt="뉴스메인이미지" />
     </main>
     <!-- 3.하단영역 -->
-    <footer class="footer">
+    <footer class="footer border-style1 layout-common">
       <!-- address요소 : 주소 등 정보 -->
       <address>
         서울시 강남구 역삼동 119 대호B 8F <br>

@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* Info PJ 메인페이지용 CSS - main.css */
+/* 2. 메인영역 */
+.main {
+  /* 글자정중앙(인라인요소 적용) */
+  text-align: center;
+  /* 메인패딩만 없앰! */
+  padding: 0;
+}
+/* 메인이미지 */
+.main > img {
+  /* 박스에 이미지 크기 맞춤 */
+  width: 90%;
+}
