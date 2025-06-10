@@ -54,15 +54,15 @@
         자식요소 넘치는것 숨기기 사용! */
   overflow: hidden;
   /* 가로크기 */
-  width: 467px;
+  width: 470px;
   /* 마영오! */
   margin: 0 auto;
   /* 패딩 */
   padding: 0;
 }
 /* 메인로고 */
-#main-logo{
-    width: 45px;
+#main-logo {
+  width: 45px;
 }
 /* 메뉴 리스트 */
 .header ul li {
@@ -75,6 +75,24 @@
   font-size: 25px;
   /* 패딩: 위아래0 양쪽17px */
   padding: 0 17px;
+}
+/* 메뉴링크 */
+.header ul li a {
+  /* 글자색 */
+  color: darkgreen;
+  /* 글자밑줄없앰 */
+  text-decoration: none;
+  /* 글자두껍게 */
+  font-weight: bold;
+}
+/* 링크 마우스 오버시
+가상클래스 선택자:hover 사용함! */
+.header ul li a:hover {
+  /* 글자색 */
+  color: hotpink;
+  /* 글자윗줄 */
+  text-decoration: overline;
+  /* 라인삭제는 ctrl+shift K */
 }
 
 /* 2. 메인영역 */
