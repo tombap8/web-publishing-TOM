@@ -34,7 +34,9 @@
         모두 포함된 박스로 설정된다! */
 
   /* 보더(경계선) - border: 두께 종류 색상 */
-  border: 10px dotted hotpink;
+  border: 5px dashed hotpink;
+  /* 박스모서리 둥글게 */
+    border-radius: 30px;
   /* 하단마진 덮어쓰기 */
   margin-bottom: 20px;
 }
@@ -90,8 +92,8 @@
 .header ul li a:hover {
   /* 글자색 */
   color: hotpink;
-  /* 글자윗줄 */
-  text-decoration: overline;
+  /* 글자밑줄 */
+  text-decoration: underline;
   /* 라인삭제는 ctrl+shift K */
 }
 
