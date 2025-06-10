@@ -13,7 +13,10 @@
 
     <title>네이버요약뉴스 IT/과학</title>
     <!-- 외부CSS 불러오기 : 익스터널방식 -->
-     <link rel="stylesheet" href="./css/common.css">
+    <!-- 공통CSS -->
+    <link rel="stylesheet" href="./css/common.css" />
+    <!-- 서브CSS -->
+    <link rel="stylesheet" href="./css/sub.css" />
     <style>
       /* 스타일시트 영역에 CSS를 쓰는 방법 : 인터널방식 */
       /* 
@@ -23,18 +26,24 @@
           속성:값;
         }
       */
-
-      
     </style>
   </head>
   <body>
     <!-- 1.상단영역 -->
-    <header class="header border-style1 layout-common" style="text-align: center">
+    <header
+      class="header border-style1 layout-common"
+      style="text-align: center"
+    >
       <!-- 태그안에 style속성으로 지정하는 방법은 인라인방식임 -->
       <h1 id="main-title">네이버요약뉴스</h1>
       <ul>
         <li>
-        <a href="./index.html"><img id="main-logo" src="./images/naver_logo.png" alt="네이버 로고"></a>
+          <a href="./index.html"
+            ><img
+              id="main-logo"
+              src="./images/naver_logo.png"
+              alt="네이버 로고"
+          /></a>
         </li>
         <li><a href="./sub1.html">경제</a></li>
         <li><a href="./sub2.html">사회</a></li>
@@ -44,33 +53,61 @@
     </header>
     <!-- 2.메인영역 -->
     <main class="main layout-common">
-      <h2>오픈AI, 한국 법인 채용 시작…주3일 출근 ‘눈길’</h2>
-<p>
-  
-        [헤럴드경제=김영철 기자] 오픈AI가 한국법인을 설립하고 국내 진출을 선언한 이후 서울 지사에서 근무할 6개 직군의 채용을 시작했다.
-  <br><br>
-  29일 정보통신기술(ICT) 업계에 따르면 오픈AI는 전날 채용 관련 소셜미디어 링크드인에 서울 지사에서 근무할 경력직 인재 6개 직군을 채용한다고 공지했다.
-  <br><br>
-  ‘시장 진출’(GTM) 직군에는 대기업·디지털·전략 부문의 고객을 총괄하는 ‘어카운트 디렉터’(고객 총괄) 3개 직군을 채용한다. 나머지 직군은 고객 관리, 기술 엔지니어, 설루션 설계 등이다.
-  <br><br>
-  6개 직군 모두 주3일 출근하고 나머지 근무는 재택 여부를 선택할 수 있는 하이브리드 방식으로 운영될 예정이다.
-  <br><br>
-  모든 직군은 관련 분야에서 다년간 경험을 쌓은 경력직을 채용한다.
-  <br><br>
-  전략 부문의 경우 ‘연간 200만 달러 이상의 매출 성과를 3년 이상 연속으로 달성한 경험’, ‘서비스형 소프트웨어(SaaS), 서비스형 플랫폼(PaaS) 분야에서 14년 이상 영업한 경험’ 등이 지원 조건이다.
-  <br><br>
-  오픈AI는 입사자가 해외 또는 국내에서 서울로 이전할 수 있도록 지원할 방침이다.
-  <br><br>
-  앞서 오픈AI는 지난 26일 국내 언론과 만나 한국에 법인을 공식 설립했으며 향후 몇 달 내 서울에 첫 번째 사무소를 열어 국내 사업을 본격화한다고 밝혔다.
-</p>
+      <!-- 2-1. 서브타이틀 -->
+      <h2 class="sub-title">IT/과학</h2>
+      <!-- 2-2. 언론사로고 -->
+       <div class="press-logo">
+        <img src="./images/press_logo3.png" alt="헤럴드경제">
+       </div>
+      <!-- 2-3. 기사제목 -->
+      <h3>오픈AI, 한국 법인 채용 시작…주3일 출근 ‘눈길’</h3>
+      <!-- 2-4. 기사사진 -->
+       <!-- figure는 이미지,표 박스 -->
+       <figure class="article-picture">
+        <img src="./images/article_img3.jpg" alt="기사사진">
+        <!-- 이미지설명은 figcaption -->
+         <figcaption>
+          오픈AI. [로이터]</figcaption>
+       </figure>
+      <!-- 2-5. 기사내용 -->
+      <p>
+        [헤럴드경제=김영철 기자] 오픈AI가 한국법인을 설립하고 국내 진출을 선언한
+        이후 서울 지사에서 근무할 6개 직군의 채용을 시작했다.
+        <br /><br />
+        29일 정보통신기술(ICT) 업계에 따르면 오픈AI는 전날 채용 관련 소셜미디어
+        링크드인에 서울 지사에서 근무할 경력직 인재 6개 직군을 채용한다고
+        공지했다.
+        <br /><br />
+        ‘시장 진출’(GTM) 직군에는 대기업·디지털·전략 부문의 고객을 총괄하는
+        ‘어카운트 디렉터’(고객 총괄) 3개 직군을 채용한다. 나머지 직군은 고객
+        관리, 기술 엔지니어, 설루션 설계 등이다.
+        <br /><br />
+        6개 직군 모두 주3일 출근하고 나머지 근무는 재택 여부를 선택할 수 있는
+        하이브리드 방식으로 운영될 예정이다.
+        <br /><br />
+        모든 직군은 관련 분야에서 다년간 경험을 쌓은 경력직을 채용한다.
+        <br /><br />
+        전략 부문의 경우 ‘연간 200만 달러 이상의 매출 성과를 3년 이상 연속으로
+        달성한 경험’, ‘서비스형 소프트웨어(SaaS), 서비스형 플랫폼(PaaS) 분야에서
+        14년 이상 영업한 경험’ 등이 지원 조건이다.
+        <br /><br />
+        오픈AI는 입사자가 해외 또는 국내에서 서울로 이전할 수 있도록 지원할
+        방침이다.
+        <br /><br />
+        앞서 오픈AI는 지난 26일 국내 언론과 만나 한국에 법인을 공식 설립했으며
+        향후 몇 달 내 서울에 첫 번째 사무소를 열어 국내 사업을 본격화한다고
+        밝혔다.
+      </p>
+      <!-- 2-6. 기자정보 -->
+      <!-- 2-7. 기사원문 -->
     </main>
     <!-- 3.하단영역 -->
     <footer class="footer border-style1 layout-common">
       <!-- address요소 : 주소 등 정보 -->
       <address>
-        서울시 강남구 역삼동 119 대호B 8F <br>
+        서울시 강남구 역삼동 119 대호B 8F <br />
         <!-- br요소 : 줄바꿈 -->
-        대표: Tom Brace Parker <br>
+        대표: Tom Brace Parker <br />
         전화: 010-2222-3333
       </address>
     </footer>
