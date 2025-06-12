@@ -5,6 +5,13 @@
 
 /* Info PJ 공통 CSS - common.css */
 
+/* 웹폰트 불러오기 */
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Pen+Script&display=swap');
+/* 웹폰트체 셋팅법
+ font-family: "Nanum Pen Script", cursive;
+ font-family: "Jua", sans-serif;
+*/
+
 /* 공통클래스 */
 /* 1. 보더 디자인 클래스 */
 .border-style1 {
