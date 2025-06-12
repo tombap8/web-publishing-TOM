@@ -84,7 +84,7 @@
   /* 글자크기 */
   font-size: 25px;
   /* 패딩: 위아래0 양쪽17px */
-  padding: 0 17px;
+  /* padding: 0 17px; */
 }
 /* 메뉴링크 */
 .header ul li a {
@@ -94,6 +94,8 @@
   text-decoration: none;
   /* 글자두껍게 */
   font-weight: bold;
+  /* 인라인요소간 진행방향 세로정렬 :   vertical-align */
+  vertical-align: -4px;
 }
 /* 링크 마우스 오버시
 가상클래스 선택자:hover 사용함! */
@@ -117,8 +119,14 @@
 /* .header ul li::after{
   content: url(../images/naver_logo.png);
 } */
-.header ul li::before{
+
+/* 첫번째 li를 제외하고 선택하기
+-> 형제선택자 +
+앞에 어떤 요소가 있는 것만 선택가능!
+li+li 앞에 li가 있는 li만 선택함! */
+.header ul li+li::before{
   content: ' | ';
+  margin: 0 15px;
   /* content: url(../images/naver_logo.png); */
 }
 
