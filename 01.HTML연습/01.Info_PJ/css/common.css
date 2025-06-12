@@ -105,6 +105,25 @@
   /* 라인삭제는 ctrl+shift K */
 }
 
+/* 메뉴 사이에 구분자 넣기
+가상요소 사용!
+1. ::before 요소의 컨텐츠 앞에 추가됨
+2. ::after 요소의 컨텐츠 뒤에 추가됨
+콜론을 가상요소는 두개 사용함(::)
+참고) 가상클래스는 콜론을 하나씀(:) 예) a:hover
+중요) 필수속성인 content를 반드시 써야함!
+-> content값으로 문자내용 또는 이미지를 넣을 수 있다!
+*/
+/* .header ul li::after{
+  content: url(../images/naver_logo.png);
+} */
+.header ul li::before{
+  content: ' | ';
+  /* content: url(../images/naver_logo.png); */
+}
+
+
+
 /* 2. 메인영역 */
 /* .main {} */
 
