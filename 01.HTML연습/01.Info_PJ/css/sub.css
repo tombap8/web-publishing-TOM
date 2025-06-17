@@ -7,14 +7,44 @@
     font-family: "Jua", sans-serif;
     font-size: 30px;
     text-align: center;
+
     /* 배경설정
     -> 한번에 주는 방법:
     background: 색 이 반 고 위/크
     배경색 이미지 반복여부 고정 위치/크기 */
-    background: url(../images/titbg4.jpg) no-repeat center/cover;
+    /* background: url(../images/titbg4.jpg) no-repeat center/cover; */
+
+    /* 배경공통속성 셋팅 */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
     /* 박스설정 */
     padding: 50px;
 }
+/* 서브별 타이틀 글자색, 배경이미지 셋팅 */
+/* (1)경제 */
+.economy{
+    color: lightcoral;
+    background-image: url(../images/titbg2.jpg);
+}
+/* (2)사회 */
+.society{
+    color: lightgreen;
+    background-image: url(../images/titbg3.jpg);
+}
+/* (3)IT/과학 */
+.science{
+    color: lightblue;
+    background-image: url(../images/titbg4.jpg);
+}
+/* (4)TV/연예 */
+.tv{
+    color: lightpink;
+    background-image: url(../images/titbg5.jpg);
+}
+
+
 /* 2-2. 언론사로고 */
 .press-logo img{
     height: 32px;
