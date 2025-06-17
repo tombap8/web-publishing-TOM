@@ -78,3 +78,9 @@
     /* 배경색 */
     background-color: gray;
 }
+/* 기사원문 오버시
+가상클래스 :hover */
+.article-original a:hover{
+    background-color: #ff0;
+    color: #000;
+}
