@@ -2,9 +2,38 @@
 /* Info PJ 서브페이지용 CSS - sub.css */
 
 /* 2-1. 서브타이틀 */
+.sub-title{
+    /* 글자설정 */
+    font-family: "Jua", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    /* 배경설정
+    -> 한번에 주는 방법:
+    background: 색 이 반 고 위/크
+    배경색 이미지 반복여부 고정 위치/크기 */
+    background: url(../images/titbg4.jpg) no-repeat center/cover;
+    /* 박스설정 */
+    padding: 50px;
+}
 /* 2-2. 언론사로고 */
+.press-logo img{
+    height: 32px;
+}
 /* 2-3. 기사제목 */
+.article-title{
+    font-size: 33px;
+}
 /* 2-4. 기사사진 */
+.article-picture{
+    /* figure요소의 기본마진 없앰 */
+    margin: 0;
+    text-align: center;
+    /* 하단마진 */
+    margin-bottom: 50px;
+}
+.article-picture img{
+    width: 100%;
+}
 /* 2-5. 기사내용 */
 /* 2-6. 기자정보 */
 /* 2-7. 기사원문 */
