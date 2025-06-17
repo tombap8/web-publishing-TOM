@@ -41,4 +41,40 @@
     line-height: 1.7;
 }
 /* 2-6. 기자정보 */
+.reporter-info{
+    /* 글자설정 */
+    font-size: 16px;
+    color: #5b5b5b;
+    text-decoration: underline;
+    /* 밑줄에만 줄간격 옵션있음 */
+    text-underline-offset: 5px;
+    /* 박스설정 */
+    margin-bottom: 20px;
+}
 /* 2-7. 기사원문 */
+.article-original{
+    text-align: right;
+}
+/* a요소에 원형디자인 적용 */
+.article-original a{
+    /* 디자인적용위해 inline-block
+    -> 디자인은 block처럼, 정렬은 인라인처럼 적용되는 display!
+    -> 인라인요소는 크기디자인적용안됨! */
+    display: inline-block;
+    /* 박스설정 */
+    width: 120px;
+    height: 120px;
+    border: 1px solid #000;
+    /* 둥근모서리 - 50%값은 원 */
+    border-radius: 50%;
+    /* 글자설정 */
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    /* 가로중앙 */
+    text-align: center;
+    /* 세로중앙은 줄간격을 높이값만큼 준다! */
+    line-height: 120px;
+    /* 배경색 */
+    background-color: gray;
+}
