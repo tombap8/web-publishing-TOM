@@ -137,3 +137,17 @@ body{
     width: 80%;
     height: 80%;
 }
+
+/* 다리공통 */
+.leg{
+    position: absolute;
+    /* 부모는? .body */
+    top: 100%;
+
+    width: 70px;
+    height: 260px;
+}
+/* 오른다리 */
+.leg2{
+    right: 0;
+}
