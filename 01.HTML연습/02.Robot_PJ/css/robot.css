@@ -23,6 +23,11 @@ body{
     /* 가로중앙 - 마영오! */
     margin: 100px auto 50px;
 }
+/* 눈공통 */
+.eye{
+    /* 원형눈 */
+    border-radius: 50%;
+}
 /* 왼눈 */
 .eye1{
     position: absolute;
