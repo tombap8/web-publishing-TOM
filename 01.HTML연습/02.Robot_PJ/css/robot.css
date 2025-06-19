@@ -14,6 +14,12 @@ body{
     /* cursor: url(이미지경로), 대체모양설정 */
 }
 
+/* 로봇 전체박스 */
+.robot-box {
+    /* 로봇 다리를 위한 하단패딩 */
+    padding-bottom: 700px;
+}
+
 /* 로봇머리 */
 .head{
     /* 부모자격필요! */
@@ -74,4 +80,60 @@ body{
     width: 90px;
     height: 40px;
     background: url(../images/mouth.png) no-repeat 0/100% 100%;
+}
+
+/* 왼귀 */
+.ear1{
+    position: absolute;
+    top: 87px;
+    left: -50px;
+
+    width: 50px;
+    height: 80px;
+}
+/* 오른귀 */
+.ear2{
+    position: absolute;
+    top: 87px;
+    right: -50px;
+
+    width: 50px;
+    height: 80px;
+}
+
+/* 로봇몸 */
+.body{
+    /* 부모자격이 필요! */
+    position: relative;
+    width: 180px;
+    height: 320px;
+    /* 마영오! */
+    margin: 0 auto;
+}
+
+/* 팔공통 */
+.arm{
+    position: absolute;
+    /* 부모는? .body */
+    width: 50px;
+    height: 180px;
+}
+/* 왼팔 */
+.arm1{
+    left: -50px;
+}
+/* 오른팔 */
+.arm2{
+    right: -50px;
+}
+
+/* 팔하단공통 */
+.arm span{
+    position: absolute;
+    /* 부모는? .arm */
+    top: 100%;
+    left: 10%;
+
+    width: 80%;
+    height: 80%;
 }
