@@ -50,3 +50,14 @@ body{
     height: 50px;
     background: url(../images/e2.jpg) no-repeat 0/100% 100%;
 }
+
+/* 코 */
+.nose{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    width: 50px;
+    height: 70px;
+    background: url(../images/nose.jpg) no-repeat 0/100% 100%;
+}
