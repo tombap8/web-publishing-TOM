@@ -5,3 +5,25 @@
 @import url(./core.css);
 @import url(./reset.css);
 
+/* 전체 배경넣기 */
+body{
+    /* background: 색 이 반 고 윙/크 */
+    background: url(../images/bg.jpg) no-repeat fixed center top/cover;
+    /* 커서 이미지로 변경하기 */
+    cursor: url(../images/favicon.png), auto;
+    /* cursor: url(이미지경로), 대체모양설정 */
+}
+
+/* 로봇머리 */
+.head{
+    width: 250px;
+    height: 250px;
+    /* 가로중앙 - 마영오! */
+    margin: 100px auto 50px;
+}
+/* 왼눈 */
+.eye1{
+    width: 50px;
+    height: 50px;
+    background: url(../images/e1.jpg) no-repeat 0/100% 100%;
+}
