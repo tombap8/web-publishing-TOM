@@ -31,11 +31,25 @@
 
 /* 로고박스 */
 .logo{
-
+    /* 부모자격 */
+    position: relative;
 }
 /* 로고이미지 */
 .logo img{
     height: 100px;
+}
+/* 로고글자 - 앱솔루트로! */
+.logo span{
+    position: absolute;
+    /* 부모는? .logo */
+    bottom: 20px;
+    left: 30px;
+
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.1;
+    /* 글자그림자 : tsh */
+    text-shadow: 2px 2px 4px aquamarine;
 }
 
 /* 메뉴박스 */
