@@ -69,3 +69,91 @@
     color: aqua;
 }
 /************ 2. 하단영역 ************/
+/* 겉박스 */
+#bottom-area{
+    /* 반투명 배경색 넣기 */
+    background-color: #01440091;
+}
+/* 속박스 */
+.bottom-area{
+    /* 그리드 적용 */
+    display: grid;
+    /* 그리드 템플릿 컬럼 설정 */
+    grid-template-columns: 
+    repeat(auto-fit,minmax(250px,1fr));
+    /* repeat 첫번째값으로 auto-fit을 쓰면 자동맞춤함
+    두번째값으로 minmax(값1,값2) 크기의 최소값은 값1
+    최대값은 값2 -> 여기서 최대값은 1fr(등분할자동) */
+
+    /* 
+    grid-template-columns: repeat(3,200px);
+    -> 한줄에 3개씩 각각 200px가로크기 셋팅
+    grid-template-columns: repeat(4,1fr); 
+    -> 한줄에 4개씩 모두 등분할(1:1:1:1)
+    */
+
+    /* 그리드 사이간격 - grid-gap: 줄간격 열간격 */
+    grid-gap: 20px 40px;
+
+    color: #fff;
+    padding: 40px 20px;
+    /* 박스중앙 */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* 하단 모든 링크 */
+.bottom-area a {
+  color: #ccc;
+}
+/* 하단링크 오버시 */
+.bottom-area a:hover {
+  color: #00ffff;
+}
+
+/* 회사 정보 */
+.company-info p {
+  margin: 8px 0;
+}
+
+/* 빠른 링크, 법적 정보, 팔로우 영역 공통 스타일 */
+.quick-links ul,
+.legal ul,
+.follow-us ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* 뉴스레터 영역 */
+.newsletter p {
+  margin-bottom: 10px;
+}
+
+.newsletter form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.newsletter input[type="email"] {
+  flex: 1;
+  min-width: 200px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+}
+
+.newsletter button {
+  padding: 8px 16px;
+  background-color: #00ffff;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+  background-color: #00cccc;
+}
