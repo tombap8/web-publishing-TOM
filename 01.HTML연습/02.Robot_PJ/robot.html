@@ -9,27 +9,32 @@
   </head>
   <body>
     <!-- 1. 상단영역 -->
-    <header class="top-area">
-      <!-- 1-1.로고 -->
-      <h1 class="logo">
-        <a href="#">
-          <!-- 로고글자 -->
-          <span>Humanoid Robotics</span>
-          <!-- 로고이미지 -->
-          <img src="./images/robot_03.png" alt="Humanoid Robotics Logo" />
-        </a>
-      </h1>
-      <!-- 1-2.상단메뉴 -->
-      <nav class="nav-menu">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#usecases">Use Cases</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+     <!-- 2중박스 구조로 만든다! 겉박스, 속박스
+      이름을 지을때 하나는 아이디, 하나는 클래스로
+      같은 이름으로 짓는 경우가 많다! -->
+    <div id="top-area">
+      <header class="top-area">
+        <!-- 1-1.로고 -->
+        <h1 class="logo">
+          <a href="#">
+            <!-- 로고글자 -->
+            <span>Humanoid Robotics</span>
+            <!-- 로고이미지 -->
+            <img src="./images/robot_03.png" alt="Humanoid Robotics Logo" />
+          </a>
+        </h1>
+        <!-- 1-2.상단메뉴 -->
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#usecases">Use Cases</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
 
     <!-- 2. 메인영역 -->
     <main class="main-area">
