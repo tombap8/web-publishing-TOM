@@ -44,12 +44,28 @@
     /* 부모는? .logo */
     bottom: 20px;
     left: 30px;
+    /* 트랜스폼되는 로봇이미지가 위로 
+    올라오게 되는 특성때문에 z-index로 글자를
+    위로 올라오게 한다! */
+    z-index: 1;
 
     font-size: 24px;
     text-align: center;
     line-height: 1.1;
     /* 글자그림자 : tsh */
     text-shadow: 2px 2px 4px aquamarine;
+}
+
+/* 로고 글자 span박스에 오버시 다음 형제인 img
+위치이동하기(트랜스폼의 트랜스레이트 x축사용!) */
+.logo span:hover + img {
+  /* transform: translateX(168%); */
+  /* x축으로 자기가로크기의 168%오른쪽이동 */
+  /* transform: translate(168%, 0); */
+  translate: 168%;
+  /* translate속성 사용시 x축만 움직이려면
+  값을 하나만쓰고 y축이동은 띄어쓰기로 뒤에 써준다!
+  y축만 이동하고 싶으면 앞에 0쓰고 뒤에 값을 쓴다! */
 }
 
 /* 메뉴박스 */
