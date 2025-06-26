@@ -10,7 +10,7 @@
 
     /* 애니메이션 호출
     animation: 이시이지반방마 */
-    animation: lift-up-ani .5s ease-in-out 2s;
+    animation: lift-up-ani .5s ease-in-out 2s forwards;
 }
 
 /* 팔올리기 키프레임 */
@@ -22,5 +22,23 @@
     } */
     to{
         rotate: -120deg;
+    }
+}
+
+/* 아랫쪽팔 애니적용하기 */
+.arm2 span{
+    /* 축변경 */
+    transform-origin: top;
+    /* 애니메이션 호출 */
+    animation: shake-arm-ani .4s ease 2.5s infinite alternate;
+    /* 2.5초후 0.4초간 ease가속도로 
+    영원히(infinite) 
+    양방향애니(alternate) */
+}
+
+/* 팔 흔들기 키프레임 */
+@keyframes shake-arm-ani {
+    100%{
+        rotate: -40deg;
     }
 }

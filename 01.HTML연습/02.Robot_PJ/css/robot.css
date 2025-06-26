@@ -4,7 +4,10 @@
 /* 외부 CSS합치기 */
 @import url(./core.css);
 @import url(./reset.css);
+/* 상단,하단 공통 CSS */
 @import url(./common.css);
+/* 애니메이션 CSS */
+@import url(./robot_ani.css);
 
 /* 전체 배경넣기 */
 body{
@@ -129,6 +132,26 @@ body{
     width: 50px;
     height: 180px;
 }
+/* 가상요소로 관절만들기 : 팔, 다리 */
+.arm::before, .leg::before{
+    content: '';
+    position: absolute;
+    /* 부모는? .arm */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* 높이값 없이 1:1비율로 높이주기 */
+    aspect-ratio: 1;
+    /* height: 50px; */
+    border-radius: 50%;
+    background-color: #ccc;
+
+    /* y축 위치이동(내크기의 50%) */
+    translate: 0 50%;
+    z-index: 1;
+    border: 5px solid #222;
+    box-sizing: border-box;
+}
 /* 왼팔 */
 .arm1{
     left: -50px;
@@ -147,6 +170,35 @@ body{
 
     width: 80%;
     height: 80%;
+}
+
+/* 가상요소로 손만들기 */
+.arm span::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: calc(50% - 80px/2);
+    width: 80px;
+    height: 120px;
+    /* 배경이미지 */
+    background: 
+    url(../images/hand_left.png) no-repeat 0/100%;
+
+    /* outline: 2px dashed lime; */
+}
+
+/* 공통 left조정후 미세개별 위치조정은
+마진으로 하자! */
+
+/* 왼손 가상요소 변경 */
+.arm1 span::after{
+    margin-left: 7px;
+}
+/* 오른손 가상요소 변경 */
+.arm2 span::after{
+    margin-left: -6px;
+    background-image: url(../images/hand_right.png);
 }
 
 /* 다리공통 */
@@ -173,6 +225,62 @@ body{
     width: 80%;
     height: 100%;
 }
+/* 가상요소로 부츠만들기 */
+.leg span::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: -5%;
+    width: 110%;
+    height: 80%;
+    background-image: 
+    linear-gradient(to right,#ccc,#393939);
+    border-top: 5px solid #000;
+    border-radius: 0 0 30% 30%;
+}
+/* 가상요소로 신발만들기 */
+.leg span::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 110%;
+    left: -20%;
+    width: 140%;
+    height: 60px;
+    background-image: 
+    linear-gradient(to right,#ccc,#393939);
+    border: 2px solid #000;
+    border-bottom: 10px solid #000;
+    border-radius: 40px 40px 0 0;
+    /* 크기에 보더까지 포함하는 박스 */
+    box-sizing: border-box;
+}
+
+/* 어깨공통 */
+.shdr{
+    position: absolute;
+    top: -15px;
+    width: 80px;
+    height: 80px;
+}
+/* 왼어깨 */
+.shdr1{
+    left: -80px;
+    border-radius: 50% 0 0 50%;
+    /* 
+        [둥근모서리 값설정]
+        1. 1개 - 네방향
+        2. 2개 - 왼위 오른아래 / 오른위 왼아래
+        3. 3개 - 왼위 / 오른위 왼아래 / 오른아래
+        4. 4개 - 왼위 / 오른위 / 오른아래 / 왼아래
+    */
+}
+/* 오른어깨 */
+.shdr2{
+    right: -80px;
+    border-radius: 0 50% 50% 0;
+}
 
 /* 로봇 TV */
 .tv{
@@ -197,4 +305,126 @@ body{
     height: 68px;
     background-color: red;
     border-radius: 10px;
+
+    /* 아이프레임 숨기기위한 설정 */
+    overflow: hidden;
+}
+/* 아이프레임 */
+#mv {
+    position: absolute;
+    top: -4px;
+    left: -19px;
+    width: 173px;
+    height: 100px;
+    border: none;
+}
+
+/* 2-2. 로봇설명박스 */
+.box-text{
+    /* 로봇보다 위 - 포지션 있어야 위에옴 */
+    position: relative;
+    /* 최대크기800px */
+    max-width: 800px;
+    /* 박스중앙 : 마영오 */
+    margin: 0 auto;
+    /* 하단마진 200px */
+    margin-bottom: 200px;
+    /* 반투명 검정배경 */
+    background-color: rgba(0 0 0 / 0.5);
+    /* 글자색 흰색 */
+    color: #fff;
+    /* 글자그림자 */
+    text-shadow: 1px 1px 1px #000;
+    /* 패딩 : 15px 30px */
+    padding: 15px 30px;
+    /* 경계선 : 3px solid #fff */
+    border: 3px solid #fff;
+    /* 둥근모서리 : 20px */
+    border-radius: 20px;
+    /* 박스그림자를 이용한 글로우효과 : 
+    내부만 2개줌 */
+    box-shadow: 
+    inset 0 0 20px blue,
+    inset 0 0 50px 10px cyan;
+    /* 박스그림자: x y blur spread color */
+
+}
+
+/* 2-2-1.제목 */
+.box-text h2{
+    /* 스티키 포지션 */
+    position: sticky;
+    /* top값 설정시 위치고정 */
+    top: 110px;
+    /* 글자 : 35px 'Chakra Petch' */
+    font: 3.5rem 'Chakra Petch';
+    /* 글자색 lime */
+    color: lime;
+    /* 글자중앙정렬 */
+    text-align: center;
+    /* 배경색 흰색 반투명  */
+    background-color: rgba(255, 255, 255, 0.7);
+    /* 둥근모서리 20px */
+    border-radius: 20px;
+}
+/* 2-2-2.출처 */
+.box-text small{
+    /* 글자체 : 'Chakra Petch' */
+    font-family: 'Chakra Petch';
+    /* 글자크기 12px -> rem? */
+    font-size: 1.2rem;
+    /* 줄간격 : 3배 */
+    line-height: 3;
+    /* 글자색 : 노란색 */
+    color: #ff0;
+    /* 블록변경 */
+    display: block;
+    /* 글자중앙 */
+    text-align: center;
+}
+
+/* 2-2-3.내용단락 */
+.desc{
+    /* 글자체 : 'Barlow' */
+    font-family: 'Barlow';
+    /* 글자크기 : 17px -> rem */
+    font-size: 1.7rem;
+    /* 줄간격 : 1.8배 */
+    line-height: 1.8;
+    /* 자간 : 1px */
+    letter-spacing: 1px;
+    /* 단어간격 : 2px */
+    word-spacing: 2px;
+
+    /* 
+        [ 다단설정하기] 
+        - 다중열속성
+        -> column-count : 다중열개수
+        -> column-rule : 다중열구분선
+        -> column-gap : 다중열사이간격
+    */
+    /* 다중열 개수 */
+    column-count: 3;
+    /* 다중열 구분선 : 두께 종류 색상
+    보더 셋팅과 유사 */
+    column-rule: 5px dotted lightgreen;
+    /* 다중열 사이간격 */
+    column-gap: 55px;
+
+    /* 양쪽정렬 : taj */
+    text-align: justify;
+    /* 단어 단위로 줄바꿈하므로
+    양쪽정렬시 영어는 단어깨기를 해줘야함!
+    2byte인 한글,일본어 등은 안깨도 됨! */
+    word-break: break-all;
+
+    /* 들여쓰기 : ti */
+    text-indent: 40px;
+    
+}
+/* 설명문단 첫글자 가상요소로 디자인변경 */
+.desc::first-letter{
+    font-size: 3rem;
+    font-weight: bold;
+    color: orange;
 }
