@@ -37,6 +37,13 @@
 /* 로고이미지 */
 .logo img{
     height: 100px;
+    /* 트랜지션 - transition:속시이지 
+    값순서 : 속성 시간 이징 지연시간
+    속성값을 안쓰거나 all을 쓰면 
+    모든 속성이 동일하게 적용된다!
+    시간의 단위는 초단위이고 s를 사용 */
+    transition: 1.5s ease-in-out;
+
 }
 /* 로고글자 - 앱솔루트로! */
 .logo span{

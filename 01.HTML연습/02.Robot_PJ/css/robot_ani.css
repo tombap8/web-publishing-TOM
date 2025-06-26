@@ -1,3 +1,26 @@
 @charset "utf-8";
 /* 로봇 PJ 애니메이션 - 키프레임, 호출구현 : robot_ani.css */
 
+/* 오른쪽팔에 적용하기 */
+.arm2{
+    /* 트랜스폼 축변경하기
+    원래는 정중앙축이지만 변경가능함
+    transform-origin:가로축 세로축 */
+    transform-origin: top;
+
+    /* 애니메이션 호출
+    animation: 이시이지반방마 */
+    animation: lift-up-ani .5s ease-in-out 2s;
+}
+
+/* 팔올리기 키프레임 */
+@keyframes lift-up-ani {
+    /* 
+    처음상태가 from과 같다면 생략가능!
+    from{
+        rotate: 0deg;
+    } */
+    to{
+        rotate: -120deg;
+    }
+}
