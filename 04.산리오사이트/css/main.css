@@ -8,7 +8,15 @@
 @import url(./reset.css);
 @import url(./core.css);
 
-/* 공통변수 셋팅 */
+/* 공통변수 셋팅
+  [ 변수사용법 ]
+   ((변수셋팅법))
+   :root{
+    --변수명:값;
+   }
+    ((변수호출법))
+    var(--변수명)
+*/
 :root {
   /* 색상변수 : --이름-color */
   --main-gray-color: #222;
