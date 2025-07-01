@@ -5,6 +5,10 @@
 
 /****** 1024px 이하 미디어쿼리 시작 ******/
 @media screen and (max-width: 1024px) {
+    /* 메뉴박스 숨기기 */
+    .gnb, .banner img{
+        display: none;
+    }
   
 } /****** 1024px 이하 미디어쿼리 종료 ******/
 

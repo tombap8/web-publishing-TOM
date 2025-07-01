@@ -45,15 +45,22 @@ body {
 
 /* 1. 상단영역 */
 body {
+  /* fixed 상단메뉴가 배너박스를 가리므로 상단패딩으로
+  밀어서 보이게함 */
+  padding-top: 10rem;
+
   /* 임시 테스트용 */
-  height: 300vh;
+  /* height: 300vh; */
   /* 그라데이션은 배경이미지속성으로 넣는다! */
-  background-image: linear-gradient(rgb(255, 182, 182), rgb(184, 184, 252));
+  /* background-image: linear-gradient(rgb(255, 182, 182), rgb(184, 184, 252)); */
 }
 /* 겉박스 */
 #top-area {
   /* 고정포지션 : fixed */
   position: fixed;
+  top: 0;
+  /* top값을 안주면 젠틀하므로 body의 상단패딩때문에
+  밀려서 내려온다!!! */
   width: 100%;
   background-color: #fff;
 }
@@ -118,9 +125,15 @@ h1.logo img {
 }
 /* 2-1. 배너영역 */
 .banner {
+  background: url(../images/main_visual_bg.jpg) 0/50px;
+  /* 이미지가 인라인요소니까 텍스트 중앙정렬로 가로중앙셋팅 */
+  text-align: center;
+  /* 사방패딩 */
+  padding: 10rem;
 }
 /* 배너 이미지 */
 .banner img {
+  height: 60vmin;
 }
 /* 데스크탑 박스 */
 .dt-box {
