@@ -48,8 +48,7 @@ body {
   /* 임시 테스트용 */
   height: 300vh;
   /* 그라데이션은 배경이미지속성으로 넣는다! */
-  background-image: 
-  linear-gradient(rgb(255, 182, 182),rgb(184, 184, 252));
+  background-image: linear-gradient(rgb(255, 182, 182), rgb(184, 184, 252));
 }
 /* 겉박스 */
 #top-area {
@@ -99,97 +98,144 @@ h1.logo img {
 }
 
 /* 모바일 GNB 햄버거버튼 */
-.gnb-mob {}
-.gnb-mob span {}
+.gnb-mob {
+}
+.gnb-mob span {
+}
 /* 2번째,3번째 span */
-.gnb-mob span + span {}
-.gnb-mob.on span:nth-child(1) {}
-.gnb-mob.on span:nth-child(2) {}
-.gnb-mob.on span:nth-child(3) {}
+.gnb-mob span + span {
+}
+.gnb-mob.on span:nth-child(1) {
+}
+.gnb-mob.on span:nth-child(2) {
+}
+.gnb-mob.on span:nth-child(3) {
+}
 
 /* 2. 메인영역 */
 /* 메인영역 개별박스 공통 */
-#main-area > div {}
+#main-area > div {
+}
 /* 2-1. 배너영역 */
-.banner {}
+.banner {
+}
 /* 배너 이미지 */
-.banner img {}
+.banner img {
+}
 /* 데스크탑 박스 */
-.dt-box {}
+.dt-box {
+}
 /* 모바일용 박스 */
-.mob-box {}
+.mob-box {
+}
 
 /* 2-2. 캐릭터 영역 */
-.character {}
+.character {
+}
 /* 캐릭터 리스트 */
-.cat-list ul {}
-.cat-list ul li {}
+.cat-list ul {
+}
+.cat-list ul li {
+}
 /* 이미지 파트박스 */
-.img-part {}
+.img-part {
+}
 /* 두개의 이미지 공통 */
-.cat-list img {}
+.cat-list img {
+}
 /* 마지막 이미지 숨기기 */
-.cat-list img:last-child {}
+.cat-list img:last-child {
+}
 /* 오버시 이미지 보이기 */
-.cat-list li:hover img:last-child {}
+.cat-list li:hover img:last-child {
+}
 
 /* 이미지 박스 */
-.cat-list figure {}
+.cat-list figure {
+}
 /* 이미지 설명 */
-.cat-list figcaption {}
+.cat-list figcaption {
+}
 /* 캐릭터 타이틀 */
-.cat-list figcaption h3 {}
+.cat-list figcaption h3 {
+}
 /* 캐릭터 영문 */
-.cat-list figcaption p {}
+.cat-list figcaption p {
+}
 
 /* 2-3. 컴퍼니영역 */
-.company {}
+.company {
+}
 /* 2-4. 리쿠르트영역 */
-.recruit {}
+.recruit {
+}
 /* 컴퍼니 영역 & 리쿠르트 영역 
 공통 리스트 디자인 */
-.com-type-list {}
+.com-type-list {
+}
 /* 공통 타이틀 */
-.com-type-list h3 {}
+.com-type-list h3 {
+}
 /* 공통 내용 */
-.com-type-list p {}
-.com-type-list p:last-of-type {}
+.com-type-list p {
+}
+.com-type-list p:last-of-type {
+}
 /* 2-5. 플레이스영역 */
-#main-area .place {}
+#main-area .place {
+}
 /* 2-6. 컨텍어스영역 */
-.contact-us {}
+.contact-us {
+}
 
 /* 3. 컨텍어스 영역 */
 /* 3-1.컨텍어스 내용박스 부모 */
-.map-info {}
+.map-info {
+}
 /* 컨텍어스 자식 파티션 박스 등분할 */
-.map-info > div {}
+.map-info > div {
+}
 /* 3-2. 지도박스 */
-.map-box {}
-.map-box iframe {}
+.map-box {
+}
+.map-box iframe {
+}
 
 /* 3-3. 정보박스 */
-.info-box {}
+.info-box {
+}
 /* 키티 이미지 앱솔루트! */
-.info-box img {}
+.info-box img {
+}
 /* 한글주소 : h3 */
-.info-box h3 {}
+.info-box h3 {
+}
 /* 영문주소 : address */
-.info-box address {}
+.info-box address {
+}
 /* 전화번호 : p */
-.info-box p {}
+.info-box p {
+}
 
 /* 4. 하단영역 */
-.bottom-area {}
+.bottom-area {
+}
 /* 4-1. 카피라잇박스 */
-.copy-right img{}
+.copy-right img {
+}
 /* 4-2. 버튼박스 */
-.btn-box .com-btn:hover{}
+.btn-box .com-btn:hover {
+}
 
 /* 5. sns버튼 박스 */
-.q-btn {}
-.q-btn img{}
+.q-btn {
+}
+.q-btn img {
+}
 /* 6. 탑이동버튼 */
- .top-btn {}
-.top-btn span {}
-.top-btn span:before {}
+.top-btn {
+}
+.top-btn span {
+}
+.top-btn span:before {
+}
