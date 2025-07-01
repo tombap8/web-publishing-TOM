@@ -44,19 +44,59 @@ body {
 }
 
 /* 1. 상단영역 */
-body {}
+body {
+  /* 임시 테스트용 */
+  height: 300vh;
+  /* 그라데이션은 배경이미지속성으로 넣는다! */
+  background-image: 
+  linear-gradient(rgb(255, 182, 182),rgb(184, 184, 252));
+}
 /* 겉박스 */
-#top-area {}
+#top-area {
+  /* 고정포지션 : fixed */
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+}
 /* 속박스 */
-.top-area {}
+.top-area {
+  padding: var(--top-area-padding-size);
+}
 /* 상단영역 플렉스 */
-.top-area > ul {}
+.top-area > ul {
+  display: flex;
+  /* 진행방향 정렬중 양끝배치 정렬 */
+  justify-content: space-between;
+}
 /* 로고 */
-h1.logo img {}
+h1.logo img {
+  height: min(4rem, 4vw);
+  /* 
+    min(값,값)
+    내부설정값 중 작은 값을 출력
+    -> 커지는 값 중 작은값을 출력하므로
+    최대값을 지정한 것과 같다!
+    4rem -> html에 지정된 글자크기의 4배크기
+    4vw -> 보이는화면 가로크기의 4%크기
+  */
+}
 
 /* GNB메뉴 */
-.gnb {}
-.gnb > ul {}
+.gnb {
+  height: 100%;
+}
+.gnb > ul {
+  height: 100%;
+  /* 플렉스박스 - 직계자식 li가 옆으로 흘러감! */
+  display: flex;
+  /* 진행방향의 수직정렬 중앙 - 높이값 100%설정시 효과 */
+  align-items: center;
+  /* 플렉스 사이간격 */
+  gap: 8rem;
+
+  font-size: 1.6rem;
+  font-weight: 500;
+}
 
 /* 모바일 GNB 햄버거버튼 */
 .gnb-mob {}
