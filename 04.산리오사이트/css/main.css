@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+/* 메인 페이지 CSS - main.css 
+    - 변수셋팅 + 미디어쿼리 포함
+*/
+
+/* 외부공통파일 불러오기 */
+@import url(./reset.css);
+@import url(./core.css);
+
+/* 공통변수 셋팅 */
+:root {
+  /* 색상변수 : --이름-color */
+  --main-gray-color: #222;
+  --character-area-color: #fefefe;
+  --company-area-color: #f4f4f4;
+  --contact-area-color: #4a679d;
+
+  /* 사이즈변수 : --이름-size */
+  --top-area-padding-size: 2rem 5rem;
+  --bottom-area-padding-size: 5rem;
+  --contents-box-padding-size: 8.5rem 0 0;
+  --cat-title-padding-size: 1.5rem 1rem;
+}
+
+/* 전체글자 크기기준값 설정하기 : rem단위 */
+html {
+  /* 계산 편의상 10px로 설정! */
+  font-size: 10px;
+}
+
+/* 모바일 모드시 가로스크롤 안생기게 셋팅 */
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* 1. 상단영역 */
+body {}
+/* 겉박스 */
+#top-area {}
+/* 속박스 */
+.top-area {}
+/* 상단영역 플렉스 */
+.top-area > ul {}
+/* 로고 */
+h1.logo img {}
+
+/* GNB메뉴 */
+.gnb {}
+.gnb > ul {}
+
+/* 모바일 GNB 햄버거버튼 */
+.gnb-mob {}
+.gnb-mob span {}
+/* 2번째,3번째 span */
+.gnb-mob span + span {}
+.gnb-mob.on span:nth-child(1) {}
+.gnb-mob.on span:nth-child(2) {}
+.gnb-mob.on span:nth-child(3) {}
+
+/* 2. 메인영역 */
+/* 메인영역 개별박스 공통 */
+#main-area > div {}
+/* 2-1. 배너영역 */
+.banner {}
+/* 배너 이미지 */
+.banner img {}
+/* 데스크탑 박스 */
+.dt-box {}
+/* 모바일용 박스 */
+.mob-box {}
+
+/* 2-2. 캐릭터 영역 */
+.character {}
+/* 캐릭터 리스트 */
+.cat-list ul {}
+.cat-list ul li {}
+/* 이미지 파트박스 */
+.img-part {}
+/* 두개의 이미지 공통 */
+.cat-list img {}
+/* 마지막 이미지 숨기기 */
+.cat-list img:last-child {}
+/* 오버시 이미지 보이기 */
+.cat-list li:hover img:last-child {}
+
+/* 이미지 박스 */
+.cat-list figure {}
+/* 이미지 설명 */
+.cat-list figcaption {}
+/* 캐릭터 타이틀 */
+.cat-list figcaption h3 {}
+/* 캐릭터 영문 */
+.cat-list figcaption p {}
+
+/* 2-3. 컴퍼니영역 */
+.company {}
+/* 2-4. 리쿠르트영역 */
+.recruit {}
+/* 컴퍼니 영역 & 리쿠르트 영역 
+공통 리스트 디자인 */
+.com-type-list {}
+/* 공통 타이틀 */
+.com-type-list h3 {}
+/* 공통 내용 */
+.com-type-list p {}
+.com-type-list p:last-of-type {}
+/* 2-5. 플레이스영역 */
+#main-area .place {}
+/* 2-6. 컨텍어스영역 */
+.contact-us {}
+
+/* 3. 컨텍어스 영역 */
+/* 3-1.컨텍어스 내용박스 부모 */
+.map-info {}
+/* 컨텍어스 자식 파티션 박스 등분할 */
+.map-info > div {}
+/* 3-2. 지도박스 */
+.map-box {}
+.map-box iframe {}
+
+/* 3-3. 정보박스 */
+.info-box {}
+/* 키티 이미지 앱솔루트! */
+.info-box img {}
+/* 한글주소 : h3 */
+.info-box h3 {}
+/* 영문주소 : address */
+.info-box address {}
+/* 전화번호 : p */
+.info-box p {}
+
+/* 4. 하단영역 */
+.bottom-area {}
+/* 4-1. 카피라잇박스 */
+.copy-right img{}
+/* 4-2. 버튼박스 */
+.btn-box .com-btn:hover{}
+
+/* 5. sns버튼 박스 */
+.q-btn {}
+.q-btn img{}
+/* 6. 탑이동버튼 */
+ .top-btn {}
+.top-btn span {}
+.top-btn span:before {}
