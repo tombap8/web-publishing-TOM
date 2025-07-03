@@ -153,6 +153,8 @@ h1.logo img {
 /* 배너 이미지 */
 .banner img {
   height: 60vmin;
+  /* 트랜지션 적용 */
+  transition: 0.7s ease-in-out;
 }
 /* 데스크탑 박스 */
 .dt-box {
