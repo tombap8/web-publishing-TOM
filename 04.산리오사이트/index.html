@@ -44,7 +44,14 @@
               </ul>
             </nav>
             <!-- 모바일용 햄버거 버튼 -->
-             <nav class="gnb-mob">
+             <nav class="gnb-mob"
+             onclick="
+             // this는 클릭된 nav자신
+             // classList는 클래스 컨트롤하는 객체
+             // toggle(클래스명)은 클래스 넣기/빼기 메서드
+              this.classList.toggle('on');
+             "
+             >
               <a href="#">
                 <span></span>
                 <span></span>
