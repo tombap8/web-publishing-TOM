@@ -27,7 +27,7 @@
   /* 사이즈변수 : --이름-size */
   --top-area-padding-size: 2rem 5rem;
   --bottom-area-padding-size: 5rem;
-  --contents-box-padding-size: 8.5rem 0 0;
+  --contents-box-padding-size: 8.5rem 0;
   --cat-title-padding-size: 1.5rem 1rem;
 }
 
@@ -61,6 +61,8 @@ body {
   top: 0;
   /* top값을 안주면 젠틀하므로 body의 상단패딩때문에
   밀려서 내려온다!!! */
+  z-index: 9999;
+  /* 메뉴 등 다른 요소보다 위로 오게 함! */
   width: 100%;
   background-color: #fff;
 }
@@ -141,26 +143,35 @@ h1.logo img {
 /* 2. 메인영역 */
 /* 메인영역 개별박스 공통 */
 #main-area > div {
+  padding: var(--contents-box-padding-size);
 }
 /* 2-1. 배너영역 */
 .banner {
+  position: relative;
+  /* 배너 두번째 모바일 이미지의 부모역할! */
   background: url(../images/main_visual_bg.jpg) 0/50px;
   /* 이미지가 인라인요소니까 텍스트 중앙정렬로 가로중앙셋팅 */
   text-align: center;
   /* 사방패딩 */
   padding: 10rem;
 }
-/* 배너 이미지 */
+/* 배너 이미지 공통 셋팅 */
 .banner img {
   height: 60vmin;
   /* 트랜지션 적용 */
   transition: 0.7s ease-in-out;
 }
-/* 데스크탑 박스 */
-.dt-box {
-}
-/* 모바일용 박스 */
-.mob-box {
+/* 모바일용 이미지(2번째것) */
+.banner img:last-child {
+  position: absolute;
+  /* 앱솔루트 부모요소의 정중앙 배치하기
+  여기서는 y축 트랜스레이트 값을 -50%가 아닌
+  -250%로 위쪽에 올려 놓음. 결국 -50%로 변경할 것임! */
+  top: 50%;
+  left: 50%;
+  translate: -50% -250%;
+  /* 투명도 0 */
+  opacity: 0;
 }
 
 /* 2-2. 캐릭터 영역 */

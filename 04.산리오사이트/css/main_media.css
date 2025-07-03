@@ -37,7 +37,7 @@
   }
 
   /* 배너 DT용 트랜스폼으로 윗쪽이동하기 */
-  .banner img {
+  .banner img:first-child {
     /* 트랜스폼 Y축위치이동 */
     translate: 0 -150%;
     /* 가로크기 사이즈 적응 */
@@ -46,6 +46,17 @@
     height: auto;
     /* 투명도 0 */
     opacity: 0;
+  }
+  /* 배너 모바일용 트랜스폼으로 아랫쪽이동하기 */
+  .banner img:last-child {
+    /* 트랜스폼 Y축위치이동 */
+    translate: -50% -50%;
+    /* 가로크기 사이즈 적응 */
+    max-width: 80%;
+    /* 세로크기는 자동으로 전환 */
+    height: auto;
+    /* 투명도 1 */
+    opacity: 1;
   }
 } /****** 1024px 이하 미디어쿼리 종료 ******/
 
