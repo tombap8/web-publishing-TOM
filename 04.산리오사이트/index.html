@@ -44,8 +44,9 @@
               </ul>
             </nav>
             <!-- 모바일용 햄버거 버튼 -->
-             <nav class="gnb-mob"
-             onclick="
+            <nav
+              class="gnb-mob"
+              onclick="
              // this는 클릭된 nav자신
              // classList는 클래스 컨트롤하는 객체
              // toggle(클래스명)은 클래스 넣기/빼기 메서드
@@ -54,7 +55,7 @@
               document.querySelector('.gnb')
               .classList.toggle('on');
              "
-             >
+            >
               <a href="#">
                 <span></span>
                 <span></span>
@@ -76,10 +77,254 @@
             alt="데스크탑용 메인 배너"
           />
           <!-- Mobile용 배너이미지 -->
-          <img
-            src="./images/main_visual_m_v1.png"
-            alt="모바일용 메인 배너"
-          />
+          <img src="./images/main_visual_m_v1.png" alt="모바일용 메인 배너" />
+        </section>
+      </div>
+      <!-- 2-2. 캐릭터영역 -->
+      <div class="character">
+        <section class="inbox">
+          <!-- 서브 타이틀 -->
+          <h2 class="stit">character</h2>
+          <!-- 더보기 버튼 박스 -->
+          <div class="center-box">
+            <a href="#" class="com-btn view-btn"> view more </a>
+          </div>
+          <!-- 캐릭터 리스트박스 -->
+          <div class="cat-list">
+            <ul>
+              <li>
+                <figure>
+                  <div class="img-part">
+                    <img src="./images/new_main_crt1.png" alt="헬로키티" />
+                    <img src="./images/new_main_crt1_ov.png" alt="헬로키티" />
+                  </div>
+                  <figcaption>
+                    <h3>헬로키티</h3>
+                    <p class="title-en">HELLO KITTY</p>
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                <figure>
+                  <div class="img-part">
+                    <img src="./images/new_main_crt2.png" alt="마이멜로디" />
+                    <img src="./images/new_main_crt2_ov.png" alt="마이멜로디" />
+                  </div>
+                  <figcaption>
+                    <h3>마이멜로디</h3>
+                    <p class="title-en">MY MELODY</p>
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                <figure>
+                  <div class="img-part">
+                    <img src="./images/new_main_crt3.png" alt="쿠로미" />
+                    <img src="./images/new_main_crt3_ov.png" alt="쿠로미" />
+                  </div>
+                  <figcaption>
+                    <h3>쿠로미</h3>
+                    <p class="title-en">KUROMI</p>
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                <figure>
+                  <div class="img-part">
+                    <img src="./images/new_main_crt4.png" alt="폼폼푸린" />
+                    <img src="./images/new_main_crt4_ov.png" alt="폼폼푸린" />
+                  </div>
+                  <figcaption>
+                    <h3>폼폼푸린</h3>
+                    <p class="title-en">POMPOMPURIN</p>
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                <figure>
+                  <div class="img-part">
+                    <img src="./images/new_main_crt5.png" alt="시나모롤" />
+                    <img src="./images/new_main_crt5_ov.png" alt="시나모롤" />
+                  </div>
+                  <figcaption>
+                    <h3>시나모롤</h3>
+                    <p class="title-en">CINNAMOROLL</p>
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                <figure>
+                  <div class="img-part">
+                    <img src="./images/new_main_crt6.png" alt="리틀트윈스타" />
+                    <img
+                      src="./images/new_main_crt6_ov.png"
+                      alt="리틀트윈스타"
+                    />
+                  </div>
+                  <figcaption>
+                    <h3>리틀트윈스타</h3>
+                    <p class="title-en">LittleTwinStars</p>
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                <figure>
+                  <div class="img-part">
+                    <img src="./images/new_main_crt7.png" alt="포차코" />
+                    <img src="./images/new_main_crt7_ov.png" alt="포차코" />
+                  </div>
+                  <figcaption>
+                    <h3>포차코</h3>
+                    <p class="title-en">POCHACCO</p>
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                <figure>
+                  <div class="img-part">
+                    <img
+                      src="./images/new_main_crt8.png"
+                      alt="케로케로케로피"
+                    />
+                    <img
+                      src="./images/new_main_crt8_ov.png"
+                      alt="케로케로케로피"
+                    />
+                  </div>
+                  <figcaption>
+                    <h3>케로케로케로피</h3>
+                    <p class="title-en">KEROKEROKEROPPI</p>
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                <figure>
+                  <div class="img-part">
+                    <img src="./images/new_main_crt9.png" alt="구데타마" />
+                    <img src="./images/new_main_crt9_ov.png" alt="구데타마" />
+                  </div>
+                  <figcaption>
+                    <h3>구데타마</h3>
+                    <p class="title-en">GUDETAMA</p>
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                <figure>
+                  <div class="img-part">
+                    <img src="./images/new_main_crt10.png" alt="배드바츠마루" />
+                    <img
+                      src="./images/new_main_crt10_ov.png"
+                      alt="배드바츠마루"
+                    />
+                  </div>
+                  <figcaption>
+                    <h3>배드바츠마루</h3>
+                    <p class="title-en">BAD BADTZ-MARU</p>
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                <figure>
+                  <div class="img-part">
+                    <img src="./images/new_main_crt11.png" alt="턱시도샘" />
+                    <img src="./images/new_main_crt11_ov.png" alt="턱시도샘" />
+                  </div>
+                  <figcaption>
+                    <h3>턱시도샘</h3>
+                    <p class="title-en">TUXEDOSAM</p>
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                <figure>
+                  <div class="img-part">
+                    <img src="./images/new_main_crt12.png" alt="코기뮹" />
+                    <img src="./images/new_main_crt12_ov.png" alt="코기뮹" />
+                  </div>
+                  <figcaption>
+                    <h3>코기뮹</h3>
+                    <p class="title-en">Cogimyun</p>
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                <figure>
+                  <div class="img-part">
+                    <img src="./images/new_main_crt13.png" alt="딩구리데이즈" />
+                    <img
+                      src="./images/new_main_crt13_ov.png"
+                      alt="딩구리데이즈"
+                    />
+                  </div>
+                  <figcaption>
+                    <h3>딩구리데이즈</h3>
+                    <p class="title-en">Marumofubiyori</p>
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                <figure>
+                  <div class="img-part">
+                    <img
+                      src="./images/new_main_crt14.png"
+                      alt="숲의요정 페어리루"
+                    />
+                    <img
+                      src="./images/new_main_crt14_ov.png"
+                      alt="숲의요정 페어리루"
+                    />
+                  </div>
+                  <figcaption>
+                    <h3>숲의요정 페어리루</h3>
+                    <p class="title-en">RILU RILU FAIRILU</p>
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                <figure>
+                  <div class="img-part">
+                    <img src="./images/new_main_crt15.png" alt="어그레츠코" />
+                    <img
+                      src="./images/new_main_crt15_ov.png"
+                      alt="어그레츠코"
+                    />
+                  </div>
+                  <figcaption>
+                    <h3>어그레츠코</h3>
+                    <p class="title-en">Aggretsuko</p>
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                <figure>
+                  <div class="img-part">
+                    <img src="./images/new_main_crt16.png" alt="꿈속의 뮤" />
+                    <img src="./images/new_main_crt16_ov.png" alt="꿈속의 뮤" />
+                  </div>
+                  <figcaption>
+                    <h3>꿈속의 뮤</h3>
+                    <p class="title-en">Mewkledreamy</p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
         </section>
       </div>
     </main>
