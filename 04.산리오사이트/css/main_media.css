@@ -5,15 +5,25 @@
 
 /****** 1024px 이하 미디어쿼리 시작 ******/
 @media screen and (max-width: 1024px) {
-    /* 메뉴박스 숨기기 */
-    .gnb, .banner img{
-        display: none;
-    }
-  
+  /* GNB메뉴 변경하기 */
+  .gnb {
+    position: fixed;
+    top: 80px;
+    /* 오른쪽 바깥에 나가있음! */
+    left: 100%;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-color: white;
+  }
+  /* GNB 플렉스 ul요소 변경 */
+  .gnb > ul {
+    flex-direction: column;
+    gap: 3vh;
+    font-size: 5vw;
+  }
 } /****** 1024px 이하 미디어쿼리 종료 ******/
 
 /****** 800px 이하 미디어쿼리 시작 ******/
 @media screen and (max-width: 800px) {
-  
 }
 /****** 800px 이하 미디어쿼리 종료 ******/
