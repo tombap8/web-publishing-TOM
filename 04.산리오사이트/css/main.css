@@ -251,21 +251,36 @@ h1.logo img {
 
 /* 2-3. 컴퍼니영역 */
 .company {
+  background-color: var(--company-area-color);
 }
 /* 2-4. 리쿠르트영역 */
 .recruit {
+  /* 배경넣기 - 색이반고윙/크 */
+  background: var(--character-area-color) url(../images/bg_recruit.png) no-repeat center 10vh/90%;
 }
 /* 컴퍼니 영역 & 리쿠르트 영역 
 공통 리스트 디자인 */
 .com-type-list {
+  /* 플렉스 박스 진행방향 정렬 동일하게 글자중앙 하단패딩10 */
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-bottom: 10rem;
 }
 /* 공통 타이틀 */
 .com-type-list h3 {
+  font-size: 2.2rem;
+  padding: 2rem 0;
+  font-weight: normal;
 }
 /* 공통 내용 */
 .com-type-list p {
+  font-size: 1.6rem;
 }
 .com-type-list p:last-of-type {
+  /* 하단 버튼과 사이간격 3 */
+  margin-bottom: 3rem;
+
 }
 /* 2-5. 플레이스영역 */
 #main-area .place {
