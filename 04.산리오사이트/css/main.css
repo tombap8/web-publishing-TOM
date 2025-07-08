@@ -223,12 +223,20 @@ h1.logo img {
 
 /* 이미지 박스 */
 .cat-list figure {
+  /* 보더 1px #ccc 둥근모서리 20px 넘치는 요소 숨김 */
+  border: 1px solid #ccc;
+  border-radius: 2rem;
+  overflow: hidden;
 }
 /* 이미지 설명 */
 .cat-list figcaption {
+  text-align: center;
+  padding: var(--cat-title-padding-size);
 }
 /* 캐릭터 타이틀 */
 .cat-list figcaption h3 {
+  font-size: 2.2rem;
+  font-weight: normal;
 }
 /* 캐릭터 영문 */
 .cat-list figcaption p {
