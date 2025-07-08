@@ -183,6 +183,11 @@ h1.logo img {
   /* 플렉스박스로 랩핑하여 하단 패딩은 10rem */
   display: flex;
   flex-wrap: wrap;
+  /* 
+    justify-content: center;
+    - Flex 컨테이너의 자식 요소들을 가로 방향(주 축)으로 중앙에 정렬합니다.
+  */
+  justify-content: center; /* 가로 중앙 정렬 추가 */
   padding: 0 0 10rem;
 }
 .cat-list ul li {
@@ -240,6 +245,8 @@ h1.logo img {
 }
 /* 캐릭터 영문 */
 .cat-list figcaption p {
+  /* 글자크기 1.2 */
+  font-size: 1.2rem;
 }
 
 /* 2-3. 컴퍼니영역 */
