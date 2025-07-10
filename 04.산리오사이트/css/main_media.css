@@ -110,5 +110,11 @@
     /* 왼쪽아래, 오른쪽 아래만 둥근모서리 4rem */
     border-radius: 0 0 4rem 4rem;
   }
+  
+  /* 하단영역 세로방향 플렉스 정렬 */
+  .bottom-area {
+    flex-direction: column-reverse;
+    gap: 2vh;
+  }
 }
 /****** 800px 이하 미디어쿼리 종료 ******/
