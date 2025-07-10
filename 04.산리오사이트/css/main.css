@@ -284,26 +284,42 @@ h1.logo img {
 }
 /* 2-5. 플레이스영역 */
 #main-area .place {
+  /* 아래쪽 패딩 밀어서 박스 높이 증가하기 */
+  padding-bottom: 30vh;
+  /* 박스를 꽉채우는 배경이미지 넣기 */
+  background: url(../images/bg_shop.jpg) no-repeat center/cover;
 }
 /* 2-6. 컨텍어스영역 */
 .contact-us {
+  /* 배경색 bgc */
+  background-color: var(--contact-area-color);
 }
 
 /* 3. 컨텍어스 영역 */
 /* 3-1.컨텍어스 내용박스 부모 */
 .map-info {
+  /* 플렉스 박스 */
+  display: flex;
 }
 /* 컨텍어스 자식 파티션 박스 등분할 */
 .map-info > div {
+  /* 자식요소 플렉스 1:1 */
+  flex: 1;
 }
 /* 3-2. 지도박스 */
 .map-box {
+
 }
 .map-box iframe {
+  /* 지도를 본 박스에 꽉차게함 */
+  width: 100%;
+  height: 100%;
 }
 
 /* 3-3. 정보박스 */
 .info-box {
+  /* 배경흰색 */
+  background-color: #fff;
 }
 /* 키티 이미지 앱솔루트! */
 .info-box img {
