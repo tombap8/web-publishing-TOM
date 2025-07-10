@@ -256,7 +256,8 @@ h1.logo img {
 /* 2-4. 리쿠르트영역 */
 .recruit {
   /* 배경넣기 - 색이반고윙/크 */
-  background: var(--character-area-color) url(../images/bg_recruit.png) no-repeat center 10vh/90%;
+  background: var(--character-area-color) url(../images/bg_recruit.png)
+    no-repeat center 10vh/90%;
 }
 /* 컴퍼니 영역 & 리쿠르트 영역 
 공통 리스트 디자인 */
@@ -280,7 +281,6 @@ h1.logo img {
 .com-type-list p:last-of-type {
   /* 하단 버튼과 사이간격 3 */
   margin-bottom: 3rem;
-
 }
 /* 2-5. 플레이스영역 */
 #main-area .place {
@@ -300,16 +300,26 @@ h1.logo img {
 .map-info {
   /* 플렉스 박스 */
   display: flex;
+  /* 높이 350 */
+  height: 35rem;
+  /* 윗마진 50 */
+  margin-top: 5rem;
 }
 /* 컨텍어스 자식 파티션 박스 등분할 */
 .map-info > div {
   /* 자식요소 플렉스 1:1 */
-  flex: 1;
+  /* flex: 1; */
+
+  /* 자식요소에 패딩을 주면 크기가 늘어나므로
+  플렉스 자식요소의 가로크기(flex-basis)를 50%설정한다! */
+  flex-basis: 50%;
 }
 /* 3-2. 지도박스 */
 .map-box {
 }
 .map-box iframe {
+  /* 아이프레임의 기본보더 없앰 */
+  border: none;
   /* 지도를 본 박스에 꽉차게함 */
   width: 100%;
   height: 100%;
@@ -319,22 +329,45 @@ h1.logo img {
 
 /* 3-3. 정보박스 */
 .info-box {
+  /* 부모자격 */
+  position: relative;
   /* 배경흰색 */
   background-color: #fff;
   /* 오른쪽위, 오른쪽 아래만 둥근모서리 4rem */
   border-radius: 0 4rem 4rem 0;
+  /* 패딩 50 */
+  padding: 5rem;
+  /* 보더박스 - 패딩을 줘도 안늘어남! */
+  box-sizing: border-box;
 }
 /* 키티 이미지 앱솔루트! */
 .info-box img {
+  /* 오른쪽 아래 위치 */
+  position: absolute;
+  bottom: -55px;
+  right: 30px;
 }
 /* 한글주소 : h3 */
 .info-box h3 {
+  /* 글자크기 2.5 */
+  font-size: 2.5rem;
+  /* 줄간격 1.5 */
+  line-height: 1.5;
 }
 /* 영문주소 : address */
 .info-box address {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  font-style: normal;
+  line-height: 2;
+  color: #aaa;
 }
 /* 전화번호 : p */
 .info-box p {
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.7;
+  color: var(--main-gray-color);
 }
 
 /* 4. 하단영역 */

@@ -78,14 +78,37 @@
     /* 글자 중앙정렬 */
     text-align: center;
   }
-  .com-type-list li{
+  .com-type-list li {
     /* 하단 패딩 5rem */
     padding-bottom: 5rem;
-
   }
   /* 설명p요소 없애기 */
   .com-type-list p {
     display: none;
+  }
+
+  /* 3. 컨텍어스 영역 */
+  /* 3-1.컨텍어스 내용박스 부모 */
+  .map-info {
+    /* 플렉스 박스 진행방향 변경 */
+    flex-direction: column;
+    /* 마진값 변경 */
+    margin: 30px 40px 300px;
+  }
+
+  /* 3-2. 지도박스 */
+  .map-box {
+    /* 높이값 대신 비율로 박스 높이를 생성함 */
+    aspect-ratio: 1.6;
+  }
+  .map-box iframe {
+    /* 왼쪽위, 오른쪽위만 둥근모서리 4rem */
+    border-radius: 4rem 4rem 0 0;
+  }
+  /* 3-3. 정보박스 */
+  .info-box {
+    /* 왼쪽아래, 오른쪽 아래만 둥근모서리 4rem */
+    border-radius: 0 0 4rem 4rem;
   }
 }
 /****** 800px 이하 미디어쿼리 종료 ******/
